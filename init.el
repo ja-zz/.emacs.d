@@ -5,8 +5,9 @@
 ;;
 ;; general
 (global-display-line-numbers-mode 1)
-(menu-bar-mode 0)
-(tool-bar-mode 0)
+(setq column-number-mode t)
+(menu-bar-mode 0) ;; remove if in text mode i think
+(tool-bar-mode 0) ;; ditto
 (setq auto-save-default nil)
 (setq make-backup-files nil)
 ;;
@@ -54,7 +55,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(evil)))
+ '(package-selected-packages '(evil))
+ '(warning-suppress-log-types '((comp) (comp) (comp)))
+ '(warning-suppress-types '((comp) (comp))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

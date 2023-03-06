@@ -1,22 +1,10 @@
-                                                        
-                                                        
-    #                                                      ### ## ##
-                                                            #  ##:##
-                                                       	    #  #:#:#
-  ###   .###.  #####  #####  ## #   .###.    ##:  :###:     #  # # #
-    #   #: :#     :      :   #:#:#  #: :#   #     #: .#     #  #   #
-    #       #    .#     .#   # # #      #  #.     #:.   
-    #   :####    #      #    # # #  :####  #      .###: 
-    #   #:  #   #.     #.    # # #  #:  #  #.        :# 
-    #   #.  #  #:     #:     # # #  #.  #   #     #. :# 
-    #   :##:#  #####  #####  # # #  :##:#    ##:  :###: 
-    #                                                   
-   :#                                                   
-  ##:                                                   
-================================================================================
-================================================================================
-================================================================================
-problem: doom emacs has exactly two features that i care about and takes 10 whole seconds to load
+ ┏┓┏━┓╺━┓╺━┓┏┳┓┏━┓┏━╸┏━┓
+  ┃┣━┫┏━┛┏━┛┃┃┃┣━┫┃  ┗━┓
+┗━┛╹ ╹┗━╸┗━╸╹ ╹╹ ╹┗━╸┗━┛
+
+problem: doom emacs has exactly two features that i care about and takes 10
+whole ass seconds to load
+
 solution: write a config that just has those two features
 
 computers are so cool because they make stupid people (me) less stupider

@@ -31,17 +31,16 @@
 (unless (package-installed-p 'flycheck)
   (package-install 'flycheck))
 ;;
-;;
-;; planet-theme, install
-(unless (package-installed-p 'planet-theme)
-  (package-install 'planet-theme)
-  (load-theme 'planet t))
+;; dracula-theme, install
+(unless (package-installed-p 'dracula-theme)
+  (package-install 'dracula-theme)
+  (load-theme 'dracula t))
 ;;
 ;;
 ;;
 ;; Load theme before doing the rest
-(when (package-installed-p 'planet-theme)
-  (load-theme 'planet t))
+(when (package-installed-p 'dracula-theme)
+  (load-theme 'dracula t))
 ;;==============================================================================
 ;; Even uglier package stuff. Because God doesn't love us.
 ;;
@@ -55,6 +54,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("f681100b27d783fefc3b62f44f84eb7fa0ce73ec183ebea5903df506eb314077" default))
  '(package-selected-packages '(evil))
  '(warning-suppress-log-types '((comp) (comp) (comp)))
  '(warning-suppress-types '((comp) (comp))))

@@ -31,6 +31,9 @@
 (unless (package-installed-p 'flycheck)
   (package-install 'flycheck))
 ;;
+;; php-mode, install
+(unless (package-installed-p 'php-mode)
+  (package-install 'php-mode))
 ;; dracula-theme, install
 (unless (package-installed-p 'dracula-theme)
   (package-install 'dracula-theme)

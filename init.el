@@ -27,6 +27,10 @@
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 ;;
+;; elcord, install
+(unless (package-installed-p 'elcord)
+  (package-install 'elcord))
+;;
 ;; flycheck, install
 (unless (package-installed-p 'flycheck)
   (package-install 'flycheck))
@@ -47,6 +51,9 @@
 ;;==============================================================================
 ;; Even uglier package stuff. Because God doesn't love us.
 ;;
+;; elcord
+(require 'elcord)
+(elcord-mode)
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 ;; evil

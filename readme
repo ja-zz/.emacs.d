@@ -7,4 +7,13 @@ whole ass seconds to load
 
 solution: write a config that just has those two features
 
+this is my config for emacs. it provides a very zoomer-friendly experience
+with 21st-century features such as:
+     - vim keybindings (evil)
+     - on-the-fly linting (flycheck)
+     - discord rich presence (elcord)
+and so much more (not really).
+i keep this repository so that i can keep the same editing environment
+between computers easily.
+
 computers are so cool because they make stupid people (me) less stupider

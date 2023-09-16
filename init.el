@@ -59,7 +59,7 @@
 (require 'dashboard)
 (dashboard-setup-startup-hook)
 (setq dashboard-banner-logo-title "welcome to jazzmacs")
-(setq dashboard-startup-banner "~/.emacs.d/jmsmall.png")
+(setq dashboard-startup-banner "~/.emacs.d/img/jmsmall.png")
 (setq dashboard-center-content t)
 ;; elcord
 (require 'elcord)

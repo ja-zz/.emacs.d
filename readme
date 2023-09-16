@@ -14,6 +14,8 @@ with 21st-century features such as:
      - discord rich presence (elcord)
 and so much more (not really).
 i keep this repository so that i can keep the same editing environment
-between computers easily.
+between computers easily. originally it was just an init.el that installed
+two or three packages automatically but it has evolved from thats somewhat.
+more recently i have taken inspiration from snackon/Witchmacs.
 
 computers are so cool because they make stupid people (me) less stupider

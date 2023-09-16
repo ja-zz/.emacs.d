@@ -27,6 +27,10 @@
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 ;;
+;; dashboard, install
+(unless (package-installed-p 'dashboard)
+  (package-install 'dashboard))
+;;
 ;; elcord, install
 (unless (package-installed-p 'elcord)
   (package-install 'elcord))
@@ -51,6 +55,12 @@
 ;;==============================================================================
 ;; Even uglier package stuff. Because God doesn't love us.
 ;;
+;; dashboard
+(require 'dashboard)
+(dashboard-setup-startup-hook)
+(setq dashboard-banner-logo-title "welcome to jazzmacs")
+(setq dashboard-startup-banner "~/.emacs.d/jmsmall.png")
+(setq dashboard-center-content t)
 ;; elcord
 (require 'elcord)
 (elcord-mode)

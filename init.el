@@ -23,26 +23,31 @@
 (package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
-;; evil, install
+;; evil
 (unless (package-installed-p 'evil)
   (package-install 'evil))
 ;;
-;; dashboard, install
+;; company - autocomplete thing
+(unless (package-installed-p 'company)
+  (package-install 'company))
+;;
+;; dashboard - nicer splash screen
 (unless (package-installed-p 'dashboard)
   (package-install 'dashboard))
 ;;
-;; elcord, install
+;; elcord - discord rich presence
 (unless (package-installed-p 'elcord)
   (package-install 'elcord))
 ;;
-;; flycheck, install
+;; flycheck - linting
 (unless (package-installed-p 'flycheck)
   (package-install 'flycheck))
 ;;
-;; php-mode, install
+;; php-mode - major mode for PHP
 (unless (package-installed-p 'php-mode)
   (package-install 'php-mode))
-;; dracula-theme, install
+;;
+;; dracula-theme - alright looking color scheme
 (unless (package-installed-p 'dracula-theme)
   (package-install 'dracula-theme)
   (load-theme 'dracula t))
@@ -53,14 +58,18 @@
 (when (package-installed-p 'dracula-theme)
   (load-theme 'dracula t))
 ;;==============================================================================
-;; Even uglier package stuff. Because God doesn't love us.
+;; Configuration for individual packages.
 ;;
 ;; dashboard
 (require 'dashboard)
 (dashboard-setup-startup-hook)
 (setq dashboard-banner-logo-title "welcome to jazzmacs")
-(setq dashboard-startup-banner "~/.emacs.d/img/jmsmall.png")
+(setq dashboard-startup-banner "~/.emacs.d/img/jmsmall.png") ;; splash pic
 (setq dashboard-center-content t)
+;;
+;; company
+(setq company-global-modes '(not php-mode))
+(add-hook 'after-init-hook 'global-company-mode)
 ;; elcord
 (require 'elcord)
 (elcord-mode)

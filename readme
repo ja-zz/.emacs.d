@@ -16,7 +16,8 @@ and so much more (not really).
 i keep this repository so that i can keep the same editing environment
 between computers easily. originally it was just an init.el that installed
 two or three packages automatically but it has evolved from thats somewhat.
-more recently i have taken inspiration from snackon/Witchmacs.
+more recently i have taken inspiration from snackon/Witchmacs. things are
+still very rough though
 
 todo: make editing php less painful
 

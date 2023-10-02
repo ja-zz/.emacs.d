@@ -2,10 +2,12 @@
   ┃┣━┫┏━┛┏━┛┃┃┃┣━┫┃  ┗━┓
 ┗━┛╹ ╹┗━╸┗━╸╹ ╹╹ ╹┗━╸┗━┛
 
-problem: doom emacs has exactly two features that i care about and takes 10
+problem circa 2021: doom emacs has exactly two features that i care about and takes 10
 whole ass seconds to load
 
 solution: write a config that just has those two features
+
+more features have been added since then
 
 this is my config for emacs. it provides a very zoomer-friendly experience
 with 21st-century features such as:

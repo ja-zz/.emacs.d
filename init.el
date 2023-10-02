@@ -68,7 +68,6 @@
 (setq dashboard-center-content t)
 ;;
 ;; company
-(setq company-global-modes '(not php-mode))
 (add-hook 'after-init-hook 'global-company-mode)
 ;; elcord
 (require 'elcord)
